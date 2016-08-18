@@ -56,3 +56,11 @@ If you don't want to expose your storage account key in core-site.xml. You can a
 /usr/local/hadoop/bin/hadoop fs -ls / # if the default file system is set to wasb
 
 ```
+
+References:
+- [Official Apache documentation](https://hadoop.apache.org/docs/current/hadoop-azure/index.html)
+- [Why WASB makes Hadoop on Azure so very cool](https://blogs.msdn.microsoft.com/cindygross/2015/02/03/why-wasb-makes-hadoop-on-azure-so-very-cool/)
+- [Understanding WASB and Hadoop Storage in Azure](https://blogs.msdn.microsoft.com/cindygross/2015/02/04/understanding-wasb-and-hadoop-storage-in-azure/)
+- [Use HDFS-compatible Azure Blob storage with Hadoop in HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-use-blob-storage/)
+- [Create and upload data to Azure Blob Storage for Hadoop](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-use-blob-storage/)
+
