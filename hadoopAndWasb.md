@@ -52,7 +52,6 @@ If you don't want to expose your storage account key in core-site.xml. You can a
 ```
 /usr/local/hadoop/bin/hadoop fs -ls wasb:///
 /usr/local/hadoop/bin/hadoop fs -ls wasb://my_container_name@my_blob_account_name.blob.core.windows.net
-/usr/local/hadoop/bin/hadoop fs -ls wasb://another_container_on_the_same_blob@my_blob_account_name.blob.core.windows.net
 /usr/local/hadoop/bin/hadoop fs -ls / # if the default file system is set to wasb
 
 ```
