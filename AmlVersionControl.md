@@ -68,7 +68,7 @@ You can then take the WSD file and version control it. You can also deploy the W
 An important aspect of ALM is to be able to automate the execution and deployment process of the application. In Azure ML, you can accomplish this using the [PowerShell module](http://aka.ms/amlps). Here is a sample end to end steps that can be relevant to a standard ALM process with the PowerShell module.
 
 1. [Upload a dataset](https://github.com/hning86/azuremlps#upload-amldataset). 
-2. Copying an experiment into the workspace from a [workspace](https://github.com/hning86/azuremlps#copy-amlexperiment) or from Gallery, or [import](https://github.com/hning86/azuremlps#import-amlexperimentgraph) an [exported](https://github.com/hning86/azuremlps#export-amlexperimentgraph) experiment from local disk.
+2. Copying an experiment into the workspace from a [workspace](https://github.com/hning86/azuremlps#copy-amlexperiment) or from [Gallery](https://github.com/hning86/azuremlps/blob/master/README.md#copy-amlexperimentfromgallery), or [import](https://github.com/hning86/azuremlps#import-amlexperimentgraph) an [exported](https://github.com/hning86/azuremlps#export-amlexperimentgraph) experiment from local disk.
 3. [Run the experiment](https://github.com/hning86/azuremlps#start-amlexperiment)
 4. [Deploy a web service](https://github.com/hning86/azuremlps#new-amlwebservice)
 5. Test the web service [RRS](https://github.com/hning86/azuremlps#invoke-amlwebservicerrsendpoint)/[BES](https://github.com/hning86/azuremlps#invoke-amlwebservicebesendpoint) endpoint 
