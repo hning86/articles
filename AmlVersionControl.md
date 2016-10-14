@@ -65,14 +65,10 @@ If you are create new ARM based web service, endpoint construct is no longer ava
 You can then take the WSD file and version control it. You can also deploy the WSD as a new web service in a different web service plan in a different Azure region. To patch in different .iLearner files, you can modify the WSD file and update the location reference of the trained model, and deploy as a new web service.
 
 ## Automate experiment execution and deployment
-An important aspect of ALM is to be able to automate the execution and deployment process of the application. In Azure ML, you can accomplish this using the [PowerShell module](http://aka.ms/amlps). Here is a sample end to end process that can be relevant to standard ALM process: 
+An important aspect of ALM is to be able to automate the execution and deployment process of the application. In Azure ML, you can accomplish this using the [PowerShell module](http://aka.ms/amlps). Here is a sample end to end steps that can be relevant to a standard ALM process with the PowerShell module.
 
-1. Create a new workspace with New-AmlWorkspace.
-2. Invite new users and granting rights to the workspace.
-3. Upload a dataset
-4. Copying an experiment into the workspace, 
-5. Run the experiment
-6. Deploy a web service
-7. Test the web service RRS/BES endpoint 
-8. Delete all assets 
-9. Tear down the workspace. 
+1. [Upload a dataset](https://github.com/hning86/azuremlps#upload-amldataset). 
+2. Copying an experiment into the workspace from a [workspace](https://github.com/hning86/azuremlps#copy-amlexperiment) or from Gallery, or [import](https://github.com/hning86/azuremlps#import-amlexperimentgraph) an [exported](https://github.com/hning86/azuremlps#export-amlexperimentgraph) experiment from local disk.
+3. [Run the experiment](https://github.com/hning86/azuremlps#start-amlexperiment)
+4. [Deploy a web service](https://github.com/hning86/azuremlps#new-amlwebservice)
+5. Test the web service [RRS](https://github.com/hning86/azuremlps#invoke-amlwebservicerrsendpoint)/[BES](https://github.com/hning86/azuremlps#invoke-amlwebservicebesendpoint) endpoint 
