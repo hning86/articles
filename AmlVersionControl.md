@@ -10,7 +10,7 @@ There are two recommended ways to version your experiments. You can either rely 
 
 The execution model of Azure Machine Learning experiment is that every time when you hit the Run button in the experiment editor, an immutable snapshot of the experiment is submitted to the job scheduler. You can view this list of snapshots by click on the "RUN HISTORY" button on the command bar in the experiment editor view.
 
-![RUN HISTORY button](http://azuremluxcdnprod001.blob.core.windows.net/docs/articles/RunHistory.PNG)
+![Run History button](http://az754797.vo.msecnd.net/docs/articles/RunHistory.PNG)
 
 You can then open the a snapshot in Locked mode by clicking on the name of the experiment at the time the experiment was submitted for run and snapshot was taken. Notice that only the first item in the list, which represents the current experiment, is in Editable state. Also notice that each snapshot can be in various Status as well, including Finished, Finished (Partial run), Failed, Failed (Partial run), or Draft.
 
