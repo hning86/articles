@@ -69,10 +69,10 @@ An important aspect of ALM is to be able to automate the execution and deploymen
 
 1. [Upload a dataset](https://github.com/hning86/azuremlps#upload-amldataset). 
 2. Copy a training experiment into the workspace from a [workspace](https://github.com/hning86/azuremlps#copy-amlexperiment) or from [Gallery](https://github.com/hning86/azuremlps#copy-amlexperimentfromgallery), or [import](https://github.com/hning86/azuremlps#import-amlexperimentgraph) an [exported](https://github.com/hning86/azuremlps#export-amlexperimentgraph) experiment from local disk.
-3. Update the dataset in the training experiment.
+3. [Update the dataset](https://github.com/hning86/azuremlps#update-amlexperimentuserasset) in the training experiment.
 4. [Run the training experiment](https://github.com/hning86/azuremlps#start-amlexperiment)
 5. [Promote the trained model](https://github.com/hning86/azuremlps#promote-amltrainedmodel).
-6. Copy a predictive experiment into the workspace.
+6. [Copy a predictive experiment](https://github.com/hning86/azuremlps#copy-amlexperiment) into the workspace.
 7. [Update the trained model](https://github.com/hning86/azuremlps#update-amlexperimentuserasset) in the predictive experiment.
 8. [Run the predictive experiment](https://github.com/hning86/azuremlps#start-amlexperiment).
 9. [Deploy a web service](https://github.com/hning86/azuremlps#new-amlwebservice) from the predictive experiment.
