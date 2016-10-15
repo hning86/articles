@@ -54,7 +54,7 @@ To version a classic web service, you can leverage the web service endpoint cons
 5. You can now create an additional endpoint ep3, which exposes the new version of the experiment and trained model. 
 6. Go back to step 3 if needed.
 
-Over time, you may have many endpoints ceated in the same web service, each represents a point-in-time copy of the experiment containing trained model. You can then use external logic to determine which endpoint to call, which effectively means selecting a version of the trained model for the scoring run.
+Over time, you may have many endpoints ceated in the same web service, each represents a point-in-time copy of the experiment containing the point-in-time version of the trained model. You can then use external logic to determine which endpoint to call, which effectively means selecting a version of the trained model for the scoring run.
 
 You can also create many identical web service endpoints, and then patch different versions of the .iLearner file to the endpoint to achieve similar effect. This [article](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-create-models-and-endpoints-with-powershell/) explains in more detail on how to accomplish that.
 
