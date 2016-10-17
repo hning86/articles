@@ -60,12 +60,12 @@ You can also create many identical web service endpoints, and then patch differe
 
 
 ### New web service
-If you are create new ARM based web service, endpoint construct is no longer available. Instead, you can generate WSD (web service definition) files, in JSON format, from your predictive experiment using the [GetWSD.exe tool](https://github.com/ritwik20/AzureML-WebServices), or using PowerShell commandlet [*Explort-AzureRmMlWebservice*](https://msdn.microsoft.com/en-us/library/azure/mt767935.aspx) on a deployed ARM based web service. 
+If you are create new ARM based web service, endpoint construct is no longer available. Instead, you can generate WSD (web service definition) files, in JSON format, from your predictive experiment using the [Export-AmlWebServiceDefinitionFromExperiment](https://github.com/hning86/azuremlps#export-amlwebservicedefinitionfromexperiment) PowerShell commandlet, or using [*Explort-AzureRmMlWebservice*](https://msdn.microsoft.com/en-us/library/azure/mt767935.aspx) PowerShell commandlet from an arleady deployed ARM based web service. 
 
-You can then take the WSD file and version control it. You can also deploy the WSD as a new web service in a different web service plan in a different Azure region. To patch in different .iLearner files, you can modify the WSD file and update the location reference of the trained model, and deploy as a new web service.
+Once you have the exported WSD file and version control it. You can also deploy the WSD as a new web service in a different web service plan in a different Azure region. Just make sure you supply the proper storage account configuration as well as the new web service plan ID. To patch in different .iLearner files, you can modify the WSD file and update the location reference of the trained model, and deploy as a new web service.
 
 ## Automate experiment execution and deployment
-An important aspect of ALM is to be able to automate the execution and deployment process of the application. In Azure ML, you can accomplish this using the [PowerShell module](http://aka.ms/amlps). Here is a sample end to end steps that can be relevant to a standard ALM process with the PowerShell module.
+An important aspect of ALM is to be able to automate the execution and deployment process of the application. In Azure ML, you can accomplish this using the [PowerShell module](http://aka.ms/amlps). Here is a example of end to end steps that are relevant to a standard ALM automated execution/deployment process using the [Azure ML Studio PowerShell module](http://aka.ms/amlps). Each step is linked to one or more PowerShell commandlets that you can leverage to accomplish that step.
 
 1. [Upload a dataset](https://github.com/hning86/azuremlps#upload-amldataset). 
 2. Copy a training experiment into the workspace from a [workspace](https://github.com/hning86/azuremlps#copy-amlexperiment) or from [Gallery](https://github.com/hning86/azuremlps#copy-amlexperimentfromgallery), or [import](https://github.com/hning86/azuremlps#import-amlexperimentgraph) an [exported](https://github.com/hning86/azuremlps#export-amlexperimentgraph) experiment from local disk.
