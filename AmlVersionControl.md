@@ -1,4 +1,4 @@
-#Application Lifecycle Management in Azure Machine Learning Studio
+t#pplication Lifecycle Management in Azure Machine Learning Studio
 
 
 Azure Machine Learning Studio is a tool for developing machine learning experiments and operaionalize it in the Azure cloud. It is like Visual Studio IDE and scalable Web Service hosting services merged into a single platform. Hence, it is only logical/natural to incorporate standard ALM (application life-cycle management) practices, from versioning various assets to automated execution and deployment. into the Azure Machine Learning Studio. This article intends to cover some of the options and approaches. 
@@ -12,7 +12,7 @@ The execution model of Azure Machine Learning experiment is that every time when
 
 ![Run History button](https://github.com/hning86/articles/blob/master/imgs/RunHistory.PNG)
 
-You can then open the a snapshot in Locked mode by clicking on the name of the experiment at the time the experiment was submitted for run and snapshot was taken. Notice that only the first item in the list, which represents the current experiment, is in Editable state. Also notice that each snapshot can be in various Status as well, including Finished, Finished (Partial run), Failed, Failed (Partial run), or Draft.
+You can then open the a snapshot in Locked mode by clicking on the name of the experiment at the time the experiment was submitted for run and snapshot was taken. Notice that only the first item in the list, which represents the current experiment, is in Editable state. Also notice that each snapshot can be in various Status as well, including Finished (Partial run), Failed, Failed (Partial run), or Draft.
 
 ![RUN HISTORY list](https://github.com/hning86/articles/blob/master/imgs/RunHistoryList.PNG)
 
@@ -36,9 +36,9 @@ A trained model in Azure ML is serialized into a format known as .iLearner file 
 4. Call the BES endpoint of the training web service, and specify the desired .iLearner file name and Azure blob storage account location where it will be stored.
 5. Harvest the produced .iLearner file after the BES call finishes.
 
-Once you have the .iLearner file containing the trained model, you can then employ your own versioning strategy, from as simple as applying a pre/postfix as a naming convention and just leaving the .iLearner file in Azure blob storage, or copying/importing it into your version control system.
+Once you have the .iLearner file containing the trained model, you can then employ your own versioning strategy, from as simple as applying a pre/postfix as a naming convention and just leaving the .iLearner file in Azure blob storage, to copying/importing it into your version control system.
 
-The saved .iLearner file can then be used for scoring through web services.
+The saved .iLearner file can then be used for scoring through deployed web services.
 
 
 ## Versioning web service
