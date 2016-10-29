@@ -36,7 +36,7 @@ A trained model in Azure ML is serialized into a format known as .iLearner file 
 4. Call the BES endpoint of the training web service, and specify the desired .iLearner file name and Azure blob storage account location where it will be stored.
 5. Harvest the produced .iLearner file after the BES call finishes.
 
-The other alternative to obtain a copy of the ilearner file, is to use [Download-AmlExperimentNodeOutput](https://github.com/hning86/azuremlps#download-amlexperimentnodeoutput) commandlet in [Azure ML PowerShell Module](http://aka.ms/amlps).
+The other alternative to obtain a copy of the ilearner file, is to use [*Download-AmlExperimentNodeOutput*](https://github.com/hning86/azuremlps#download-amlexperimentnodeoutput) commandlet in [Azure ML PowerShell Module](http://aka.ms/amlps).
 
 Once you have the .iLearner file containing the trained model, you can then employ your own versioning strategy, from as simple as applying a pre/postfix as a naming convention and just leaving the .iLearner file in Azure blob storage, to copying/importing it into your version control system.
 
@@ -67,7 +67,7 @@ If you are create new ARM based web service, endpoint construct is no longer ava
 Once you have the exported WSD file and version control it. You can also deploy the WSD as a new web service in a different web service plan in a different Azure region. Just make sure you supply the proper storage account configuration as well as the new web service plan ID. To patch in different .iLearner files, you can modify the WSD file and update the location reference of the trained model, and deploy as a new web service.
 
 ## Automate experiment execution and deployment
-An important aspect of ALM is to be able to automate the execution and deployment process of the application. In Azure ML, you can accomplish this using the [PowerShell module](http://aka.ms/amlps). Here is a example of end to end steps that are relevant to a standard ALM automated execution/deployment process using the [Azure ML Studio PowerShell module](http://aka.ms/amlps). Each step is linked to one or more PowerShell commandlets that you can leverage to accomplish that step.
+An important aspect of ALM is to be able to automate the execution and deployment process of the application. In Azure ML, you can accomplish this using the [Azure ML PowerShell module](http://aka.ms/amlps). Here is a example of end to end steps that are relevant to a standard ALM automated execution/deployment process using the PowerShell module. Each step is linked to one or more PowerShell commandlets that you can leverage to accomplish that step.
 
 1. [Upload a dataset](https://github.com/hning86/azuremlps#upload-amldataset). 
 2. Copy a training experiment into the workspace from a [workspace](https://github.com/hning86/azuremlps#copy-amlexperiment) or from [Gallery](https://github.com/hning86/azuremlps#copy-amlexperimentfromgallery), or [import](https://github.com/hning86/azuremlps#import-amlexperimentgraph) an [exported](https://github.com/hning86/azuremlps#export-amlexperimentgraph) experiment from local disk.
