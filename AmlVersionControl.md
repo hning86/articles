@@ -1,6 +1,7 @@
 #Application Lifecycle Management in Azure Machine Learning Studio
 
-
+> Note this article is published on [Azure.com](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-version-control/) so please visit there for the latest updates.
+  
 Azure Machine Learning Studio is a tool for developing machine learning experiments and operaionalize it in the Azure cloud. It is like Visual Studio IDE and scalable Web Service hosting services merged into a single platform. Hence, it is only logical/natural to incorporate standard ALM (application life-cycle management) practices, from versioning various assets to automated execution and deployment. into the Azure Machine Learning Studio. This article intends to cover some of the options and approaches. 
 
 ## Versioning experiment
