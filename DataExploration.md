@@ -27,7 +27,11 @@ Below statistics, you will also find graphs. If the dataset has more than 65k ce
 
 ![default histogram](http://test.com)
 
-However, if you dataset has 65k cells or less, you have many more options for the visualization.
+However, if you dataset has 65k cells or less, you have many more options for the visualization. For the default histogram, you can change the count to log scale, and you can define the number of bins. Two-variable charts are also supported. If you compare a numerical column to a numerical column, you get a scatter chart. If you compare a numerical column to a categorical column, you can get box chart, with each box representing a category, and the box shows min/max/quantile/mean and outliers. 
+
+![charts](http://test.com)
+
+If you compare a categorical column and another categorical column, you get a cross table displaying the total number of elements falling into each cross category. In addition, you can also save a chart you like by clicking on the copy button next to the "Compare to" dropdown. And it will stay with the output port next time you open the visualziation screen, provided the data hasn't changed.
 
 
 
