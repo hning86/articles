@@ -27,15 +27,14 @@ Below statistics, you will also find graphs. If the dataset has more than 65k ce
 
 ![default histogram](http://test.com)
 
-However, if you dataset has 65k cells or less, you have many more options for the visualization. For the default histogram, you can change the count to log scale, and you can define the number of bins. Two-variable charts are also supported. If you compare a numerical column to a numerical column, you get a scatter chart. If you compare a numerical column to a categorical column, you can get box chart, with each box representing a category, and the box shows min/max/quantile/mean and outliers. 
+However, if you dataset has 65k cells or less, you have many more options for the visualization. For the default histogram, you can change the count to log scale, and you can define the number of bins. Two-variable charts are also supported. If you compare a numerical column to a numerical column, you get a scatter chart. If you compare a numerical column to a categorical column, you can get box chart, with each box representing a category, and the box shows min/max/quartiles/mean and outliers. 
 
 ![charts](http://test.com)
 
 If you compare a categorical column and another categorical column, you get a cross table displaying the total number of elements falling into each cross category. In addition, you can also save a chart you like by clicking on the copy button next to the "Compare to" dropdown. And it will stay with the output port next time you open the visualziation screen, provided the data hasn't changed.
 
-
-
 ## Summarize data
+Sometimes you'd like to see more summary statistics for each column than the defualt few showing in the Visualization screen. You can connect the dataset output to a _Summarize Data_ module. This module works very similarly to the _summary()_ function in R. It computes a lot of additional interesting statitics for a numerical column, including _1st and 3rd quartile_, _mode_, _range_, _sample variance_, _sample standard deviation_, _sample skewness_, _sample kurtosis_ and a bunch of _p values_.
 
 
 ## Compute advanced statistics.
