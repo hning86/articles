@@ -6,9 +6,13 @@ Azure ML provides many ways to facilitate exploratory analysis out of the box. T
 
 ## Use the built-in _Visualize_ feature
 
-One of the most popular features in Azure ML is the ability to visualize a dataset right in the experimente graph. Simply point the mouse at any output port, then click (either left-click or right-click; they both work the same way!) on the port, and choose _Visualize_ on the output port context menu. You can also rigt-click on the module and the navigate through cascading menu which leads to the _Visualize_ menu item of the particular output port. 
+One of the most popular features in Azure ML is the ability to visualize a dataset right in the experimente graph. Simply point the mouse at any output port, then click (either left-click or right-click; they both work the same way!) on the port, and choose _Visualize_ on the output port context menu. 
 
 ![Visualize context menu](imgs/viz/ctx.png)
+
+You can also rigt-click on the module and the navigate through cascading menu which leads to the _Visualize_ menu item of the particular output port. 
+
+![Visualize context menu](imgs/viz/ctx2.png)
 
 The data visualization screen offers a convenient way to quickly understand the data visually. Below is an example using the [1974 Motor Trend Car Road Test data](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html) that comes with base R installation.
 
