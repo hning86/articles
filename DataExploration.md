@@ -38,8 +38,12 @@ However, if you dataset has 65k cells or less, you have many more options for th
 ![box chart](imgs/viz/box.png)
 ![scatter](imgs/viz/scatter.png)
 
-If you compare a categorical column and another categorical column, you get a cross table displaying the total number of elements falling into each cross category. In addition, you can also save a chart you like by clicking on the copy button next to the "Compare to" dropdown. And it will stay with the output port next time you open the visualziation screen, provided the data hasn't changed.
+If you compare a categorical column and another categorical column, you get a cross table displaying the total number of elements falling into each cross category. 
+
 ![crosstab](imgs/viz/crosstab.png)
+
+In addition, you can also save a chart you like by clicking on the copy button next to the "Compare to" dropdown. And it will stay with the output port next time you open the visualziation screen, provided the data hasn't changed.
+
 ![crosstab](imgs/viz/copy.png)
 
 ## Use _Summarize Data_ module
