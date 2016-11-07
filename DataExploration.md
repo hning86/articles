@@ -24,8 +24,8 @@ You can then select a column by clicking on the column header or any row of that
 
 For both numerical and string/categorical columns, number of _unique values_, number of _missing values_ are displayed. Additinoally for numerical columns, _mean_, _median_, _min_, _max_, _standard deviation_ are also computed and displayed.
 
-![Statistics of numerical column](http://test.com)
-![Statistics of string column](http://test.com)
+![Statistics of numerical column](imgs/viz/stats.png)
+![Statistics of numerical column](imgs/viz/stats_cat.png)
 
 Below statistics, you will also find graphs. If the dataset has more than 65k cells (even though you only see the first 100 rows of the first 100 columns), it only displays the same basic histogram as you find under the column header, except it is larger and more legible. Plus you can mouse hover a particular bar and get element count and percentage values. 
 
