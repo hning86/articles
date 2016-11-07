@@ -34,11 +34,13 @@ However, if you dataset has 65k cells or less, you have many more options for th
 If you compare a categorical column and another categorical column, you get a cross table displaying the total number of elements falling into each cross category. In addition, you can also save a chart you like by clicking on the copy button next to the "Compare to" dropdown. And it will stay with the output port next time you open the visualziation screen, provided the data hasn't changed.
 
 ## Summarize data
-Sometimes you'd like to see more summary statistics for each column than the defualt few showing in the Visualization screen. You can connect the dataset output to a _Summarize Data_ module. This module works very similarly to the _summary()_ function in R. It computes a lot of additional interesting statitics for a numerical column, including _1st and 3rd quartile_, _mode_, _range_, _sample variance_, _sample standard deviation_, _sample skewness_, _sample kurtosis_ and a bunch of _p values_.
-
+Sometimes you'd like to see more summary statistics for each column than the defualt few showing in the Visualization screen. You can connect the dataset output to a _Summarize Data_ module. This module works very similarly as the _summary()_ function in R. It computes a lot of additional interesting statitics for numerical columns, including _1st and 3rd quartile_, _mode_, _range_, _sample variance_, _sample standard deviation_, _sample skewness_, _sample kurtosis_ and a bunch of _p values_.
 
 ## Compute advanced statistics.
+If the summary statistics are not enough, you can also drag a _Compute Elementary Statistics_ module into the graph, connect the ouput dataset of a module to it, and compute additinal statistics. It allows you to select columns, default to all numerical columns, that you want to perform statistics computation on. And you can choose from a large array of statistics, such as _deviation squared_, _geometric mean_, _interquartile distance_ and etc.
 
-## Use Execute R or Python Script module to select a subset. 
+## Use Execute R or Python Script module
+If the built-in visualization and computed statistics are not enough, or if your dataset has more than 100 columns and you just want to visualize a subset, it might be a good idea to use an Execute R/Python Script module. Following is an example of using the popular ggplot2 R package to visualize the _mtcars_ (1974 Motor Trend Car Road Test) dataset.
 
 ## Use built-in R or Python JuPyteR Notebook  
+In addition, Azure ML also has built-in JyPyteR notebook support to explore and visualze data. The caveat is that you must be an owner of the current workspace in order to access notebook, and the dataset must be in CSV format. If your data is in the default "Dataset" format, you can easily convert it to CSV format by using a _Convert to CSV_ module. Then you can directly open the dataset in notebooking using a Python 2, Python 3 or R kernel. Following is an example of using the popular _matlibplot_ library in Python 2 to visualize the same _mtcars_ (1974 Motor Trend Car Road Test) dataset.
