@@ -8,11 +8,11 @@ Azure ML provides many ways to facilitate exploratory analysis out of the box. T
 
 One of the most popular features in Azure ML is the ability to visualize a dataset right in the experimente graph. Simply point the mouse at any output port, then click (either left-click or right-click; they both work the same way!) on the port, and choose _Visualize_ on the output port context menu. You can also rigt-click on the module and the navigate through cascading menu which leads to the _Visualize_ menu item of the particular output port. 
 
-![Visualize context menu](./img/viz/viz.png)
+![Visualize context menu](imgs/viz/ctx.png)
 
 The data visualization screen offers a convenient way to quickly understand the data visually. Below is an example using the [1974 Motor Trend Car Road Test data](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html) that comes with base R installation.
 
-![Visualize screen](/imgs/viz/viz.png)
+![Visualize screen](imgs/viz/viz.png)
 
 First of all, notice it shows the navigation breadcrumb that reminds you the name of the experiment, the name of the module and the name of the output port of the dataset that's being visualized currently. On the top right hand corner, it shows the number of rows and columns the current dataset has. It then displays a table containing data from the first 100 columns (starting from the left-most column) and the first 100 rows. Below the column name, it displays a mini histogram. By glancing on the mini histogram, you get a quick idea on the distribution of the data in that column. Numerical columns are automatically discretized into 10 bins to display the histogram. For string or categorical values, the histogram includes counts of the 10 most frequent values.
 
