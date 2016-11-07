@@ -6,7 +6,7 @@ Azure ML provides many ways to facilitate exploratory analysis out of the box. T
 
 ## Use the built-in _Visualize_ feature
 
-One of the most popular features in Azure ML is the ability to visualize a dataset right in the experimente graph. Simply point the mouse at any output port, then click (either left-click or right-click; they both work the same way!) on the port, and choose _Visualize_ on the output port context menu. 
+One of the most popular features in Azure ML is the ability to visualize a dataset right in the experimente graph. Simply point the mouse at any output port, then click (either left-click or right-click; they both work the same way) on the port, and choose _Visualize_ on the output port context menu. 
 
 ![Visualize context menu](imgs/viz/ctx.png)
 
