@@ -42,7 +42,7 @@ If you compare a categorical column and another categorical column, you get a cr
 
 ![crosstab](imgs/viz/crosstab.png)
 
-In addition, you can also save a chart you like by clicking on the copy button next to the "Compare to" dropdown. And it will stay with the output port next time you open the visualziation screen, provided the data hasn't changed.
+In addition, you can also pin a chart you like by clicking on the copy button next to the "Compare to" dropdown. And it will stay there even if you select a different column. This way you can easily compare 2 or more charts next to eather other.
 
 ![crosstab](imgs/viz/copy.png)
 
