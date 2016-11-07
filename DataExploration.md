@@ -10,7 +10,7 @@ One of the most popular features in Azure ML is the ability to visualize a datas
 
 ![Visualize context menu](./img/viz/viz.png)
 
-The data visualization screen offers a convenient way to quickly understand the data visually. Below is an example using the [_1974 Motor Trend Car Road Test data](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html)_ that comes with base R installation.
+The data visualization screen offers a convenient way to quickly understand the data visually. Below is an example using the [1974 Motor Trend Car Road Test data](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html) that comes with base R installation.
 
 ![Visualize screen](/imgs/viz/viz.png)
 
