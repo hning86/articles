@@ -29,11 +29,11 @@ Additionally for numerical columns, _mean_, _median_, _min_, _max_, _standard de
 ![Statistics of numerical column](imgs/viz/stats.png)
 
 
-Below statistics, you will also find graphs. If the dataset has more than 65k cells (even though you only see the first 100 rows of the first 100 columns), it only displays the same basic histogram as you find under the column header, except it is larger and more legible. Plus you can mouse hover a particular bar and get element count and percentage values. 
+Below statistics, you will also find graphs. If the dataset has more than 32,768 (2^15) cells (even though you only see the first 100 rows of the first 100 columns), it only displays the same basic histogram as you find under the column header, except it is larger and more legible. Plus you can mouse hover a particular bar and get element count and percentage values. 
 
 ![default histogram](imgs/viz/hist.png)
 
-However, if you dataset has 65k cells or less, you have many more options for the visualization. For the default histogram, you can change the count to log scale, and you can define the number of bins. Two-variable charts are also supported. If you compare a numerical column to a numerical column, you get a scatter chart. If you compare a numerical column to a categorical column, you get a box chart, with each box representing a category, and the box shows min/max/quartiles/mean and outliers. 
+However, if you dataset has 32,768 cells or less, you have many more options for the visualization. For the default histogram, you can change the count to log scale, and you can define the number of bins. Two-variable charts are also supported. If you compare a numerical column to a numerical column, you get a scatter chart. If you compare a numerical column to a categorical column, you get a box chart, with each box representing a category, and the box shows min/max/quartiles/mean and outliers. 
 
 ![box chart](imgs/viz/box.png)
 ![scatter](imgs/viz/scatter.png)
