@@ -1,4 +1,4 @@
-#Data Exploration in Azure Machine Learning Studio
+# Data Exploration in Azure Machine Learning Studio
 
 Often times the first thing a data science practitioner does before building any ML models, is to explore the data and formulate intuitions on what can be done with the data. This kind of exploratory data analysis is essential to understand the characteristics of the data before building data models techniques or perform hypothesis testing.
 
@@ -55,5 +55,5 @@ If the summary statistics are not enough, you can also drag a _Compute Elementar
 ## Use _Execute R or Python Script_ module
 If the built-in visualization and computed statistics are not enough, or if your dataset has more than 100 columns and you just want to visualize a subset, it might be a good idea to use an Execute R/Python Script module. Following is an example of using the popular ggplot2 R package to visualize the _mtcars_ (1974 Motor Trend Car Road Test) dataset.
 
-## Use _JuPyteR Notebook_ with R and Python kernels 
-In addition, Azure ML also has built-in JuPyteR notebook support to explore and visualze data. The caveat is that you must be an owner of the current workspace in order to access notebook, and the dataset must be in CSV format. If your data is in the default "Dataset" format, you can easily convert it to CSV format by using a _Convert to CSV_ module. Then you can directly open the dataset in notebooking using a Python 2, Python 3 or R kernel. Following is an example of using the popular _matlibplot_ library in Python 2 to visualize the same _mtcars_ (1974 Motor Trend Car Road Test) dataset.
+## Use _Jupyter Notebook_ with R and Python kernels 
+In addition, Azure ML also has built-in Jupyter Notebook support to explore and visualze data. The caveat is that you must be an owner of the current workspace in order to access notebook, and the dataset must be in CSV format. If your data is in the default "Dataset" format, you can easily convert it to CSV format by using a _Convert to CSV_ module. Then you can directly open the dataset in notebooking using a Python 2, Python 3 or R kernel. Following is an example of using the popular _matlibplot_ library in Python 2 to visualize the same _mtcars_ (1974 Motor Trend Car Road Test) dataset.
